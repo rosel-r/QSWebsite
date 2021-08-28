@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+font-family:"cairo" , sans-serif;
+line-height: 1.5;
+background-color: #333;
+}
+a{
+    text-decoration: none;
+}
+.text-prim{
+    color: #93cb52;
+}
+.text-prim2{
+    color: #008031;
+font-size: small;
+}
+.w3-container{
+    font-size: medium;
+    
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#navbar{
+display: flex;
+position: sticky;
+top: 0;
+background-color: rgba(51, 51, 51, 0.4);
+color:#fff;
+justify-content: space-between;
+padding: 1rem;
+z-index: 1;
+}
+#navbar .fa{
+    margin-left:8px;
+    }
+#navbar ul{
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+}
+#navbar ul li a{
+color:#fff;
+margin: 0 0.25rem;
+padding: 0.75rem;
+}
+#navbar ul li a:hover{
+    background-color: #93cb52;
+    border-radius: 5px;
+}
+
+#show{
+    background: #333 url('im1.jpeg') no-repeat
+    center center/cover ;
+    height: 100vh;
+    color: #fff;
+}
+#show .show_content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    top: 65px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+}
+.l_heading{
+    font-size: 4rem;
+    margin: 0.75rem;
+    line-height: 1.1;
+}
+.led{
+
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+.btn{
+    display: inline-block;
+    color: #fff;
+    background-color: rgb(97, 98, 155);
+    padding: 0.5rem 3rem;
+    border-radius: 5px;
+    border: none;
+    margin-top: 2rem ;
+}
+.btn:hover{
+    background: #93cb52;
+}
+.sub_menu1
+{
+  display:none;
+}
+#navbar ul li:hover .sub_menu1
+{
+  display: block;
+  position: absolute;
+  background: rgba(51, 51, 51, 0.4);
+  margin-top: 9px;
+  margin-left: -15px;
+}
+#navbar ul li:hover .sub_menu1 ul
+{
+  display: block;
+  margin: 5px;
+  padding: 0.2rem;
+}
+#navbar ul li:hover .sub_menu1 ul li
+{ 
+  padding: 5px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+}
+#navbar ul li:hover .sub_menu1 ul li:last-child
+{
+  border-bottom: none;
+}
+h2{
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    font-size: large;
+}
+.container{
+    background-color: #fff;
+    display: flex;
+}
+.a1 {
+padding: 1rem 2rem;
+margin: 1rem ;
+border: 3px solid rgb(235, 235, 80);
+float: right;
+background-color: rgb(126, 127, 133);
+border-radius: 5px;
+width: 18%;
+}
+
+.acc{
+    background-color: rgb(126, 127, 133);
+    color: rgb(251, 254, 255);
+    cursor: pointer;
+    padding: 0 15px;
+    margin: 5px;
+    text-align: right;
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 20px ;
+}
+.active, .ac{
+    background-color:#93cb52;
+    border-radius: 5px;
+}
+.sub_menu2 {
+    display: none;
+    padding: 0 ;
+    overflow: hidden;
+}
+.sub_menu2 ul li a{
+    list-style: none;
+    color: #fff;
+    background-color:  rgb(187, 188, 209);
+    text-align: right;
+    font-size: 20px ;
+    text-decoration: none;
+}
+#who{
+    display: flex;
+}
+
+.who_img{
+     flex: 1;
+     background: #333 url('team1.jpg') no-repeat 
+     center center/cover ;
+}
+.who_text{
+    flex:1;
+    color: #fff;
+    padding: 2rem;
+    line-height: 1.7rem;
+}
+.who_text p{
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+#contact{
+    background-color: #fff;
+}
+.cont{
+    color: black;
+}
+
+label{
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+.reg{
+    width: 40%;
+    margin: auto;
+    background-color: rgba(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+}
+#reg{
+    width: 60%;
+    margin: auto; 
+    margin-bottom: 10px; 
+}
+#name{
+    width: 300px;
+    outline: 0px;
+    padding: 5px;
+    border: 3px solid #9fabb6 ;
+    border-radius: 3px;
+}
+#sub{
+    width: 300px;
+    outline: 0px;
+    padding: 5px;
+    border: 3px solid #9fabb6  ;
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+    background-color: #487948;
+    border-radius: 3px;
+}
