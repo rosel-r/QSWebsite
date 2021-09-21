@@ -173,6 +173,7 @@ width: 18%;
     text-align: right;
     font-size: 20px ;
     text-decoration: none;
+    position: fixed;
 }
 #who{
     display: flex;
